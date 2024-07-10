@@ -101,13 +101,6 @@ const flowBot = addKeyword('!bot')
     })
 
     
-const flowPrincipal = addKeyword(['hola']) 
-    .addAnswer('hola soy el bot', (ctx) =>{
-      console.log(ctx);
-      console.log('flow principal');
-    })
-
-
 const main = async () => {
     const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([flowBot])
